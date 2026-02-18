@@ -1,7 +1,6 @@
 import requests
 import urllib3
 from urllib.parse import urljoin
-import ipaddress
 import argparse
 from alive_progress import alive_bar
 import os
@@ -95,7 +94,7 @@ def main():
     assets_info = read_input(filename)
 
     params_info = [ ['Nessus URL',urljoin(nessus_url,"/")],
-                    ['TXT file',filename],
+                    ['CSV file',filename],
                     ['Output', output_file]]
 
     print('')
